@@ -1,0 +1,61 @@
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 8px 16px 8px 16px;
+  background-color: black;
+  z-index: 999;
+  user-select: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#nav-logo {
+  font-family: "Patrick Hand", cursive;
+  color: white;
+  font-size: 26px;
+  font-weight: 800;
+}
+
+#nav-links {
+  display: flex;
+  gap: 16px;
+}
+
+#nav-links * {
+  text-decoration: none;
+}
+
+#nav-links-icons {
+  display: flex;
+  gap: 16px;
+}
+
+.nav-link-icon {
+  width: 30px;
+  /* filter: invert(70%); */
+}
+
+@media only screen and (max-width: 500px) {
+  #nav-links {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 501px) {
+  #nav-links-icons {
+    display: none;
+  }
+}
+
+#nav-account * {
+  color: white;
+  text-decoration: none;
+}
+
+#nav-account {
+  display: flex;
+  gap: 16px;
+  color: white;
+}

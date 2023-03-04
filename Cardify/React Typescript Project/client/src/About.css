@@ -1,0 +1,13 @@
+#about-screen {
+  background-image: url("../public/Images/about_background.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  user-select: none;
+}
+
+#about-container {
+  color: white;
+  word-wrap: break-word;
+  max-width: 40%;
+}
