@@ -23,7 +23,7 @@ router.get("/card/:id", async (req, res) => {
 });
 
 router.get("/cards", async (req, res) => {
-    let cardsCount = await getCards();
+    let cardsCount = await Card.countDocuments();
     let cardsArray = [];
     for (let i = 1; i < cardsCount + 1; i++) {
         let card = await Card.findOne({ cardid: i });
